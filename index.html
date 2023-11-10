@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/clock.png" type="image/ico">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Timer</h1>
+                <div class="counter">
+                    <input class="text-center" type="text" value="00:02">
+                </div>
+                <button>Start</button>
+            </div>
+        </div>
+    </div>
+
+    <style id="BSCSS">
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+        body{
+            background-color: #2596be;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        *{
+            border: 0;
+            outline: 0;
+        }
+
+        .container{
+            /* background-color: #fff; */
+            margin-top: 50vh;
+            transform: translate(0, -50%);
+        }
+
+        input{
+            margin: 100px auto 50px auto;
+        }
+
+        h1{
+            font-size: 5rem;
+            color: #111;
+        }
+
+        button{
+            font-size: 2rem;
+            font-weight: 700;
+            border-radius: 5px;
+            background-color: #ce796b;
+            /* background-color: #a76156; */
+            padding: 5px 10px;
+            transition: 0.2s;
+        }
+        button:hover{
+            cursor: pointer;
+            /* cursor: default; */
+        }
+        
+        input{
+            font-size: 3rem;
+            background-color: #000022;
+            color: #fff;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+    </style>
+    <!-- <style id="pureCSS">
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+
+        *{
+            border: 0;
+            padding: 0;
+            margin: 0;
+            outline: 0;
+        }
+
+        body{
+            background-color: #2596be;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            max-width: 90vw;
+            /* background-color: aquamarine; */
+            margin: 0 auto;
+            text-align: center;
+            /* margin-top: 50%; */
+            margin-top: 50vh;
+            transform: translate(0, -50%);
+        }
+        
+        .counter{
+            /* background-color: antiquewhite; */
+            width: 100%;
+            height: 100%;
+            margin-bottom: 50px;
+            margin-top: 80px;
+        }
+
+        h1{
+            font-size: 5rem;
+        }
+        
+        button{
+            font-size: 2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 8px 20px;
+            background-color: rgb(217, 255, 0);
+            cursor: pointer;
+        }
+        
+        input{
+            font-size: 8rem;
+            text-align: center;
+            width: 400px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style> -->
+    <audio src="/mixkit-positive-notification-951.wav" style="display: none;"></audio>
+    <script src="./index.js"></script>
+</body>
+</html>
